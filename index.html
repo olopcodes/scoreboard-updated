@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Scoreboard App</title>
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <header class="scoreboard-main-header">
+            <h1 class="scoreboard-heading">Score the most points and win</h1>
+            <div class="scoreboard-timer">
+                <h3 class="scoreboard-quarters">
+                    Quarters: <span id="scoreboard-quarters-played">0</span>/4
+                </h3>
+                <p id="timer" class="scoreboard-time">00:00</p>
+            </div>
+        </header>
+        <main class="scoreboard-main-wrapper">
+            <div id="home" class="scoreboard-wrapper">
+                <div class="scoreboard-header">
+                    <h2 class="scoreboard-title">home</h2>
+                    <p class="scoreboard-current-score">0</p>
+                </div>
+
+                <div class="scoreboard-display">
+                    <p id="home-points" class="scoreboard-points">0</p>
+                </div>
+                <div class="scoreboard-points-box">
+                    <button data-point="1" class="scoreboard-points-btn">
+                        +1
+                    </button>
+                    <button data-point="2" class="scoreboard-points-btn">
+                        +2
+                    </button>
+                    <button data-point="3" class="scoreboard-points-btn">
+                        +3
+                    </button>
+                </div>
+            </div>
+
+            <button id="start-btn" class="scoreboard-start-btn">
+                start game
+            </button>
+
+            <div id="guest" class="scoreboard-wrapper">
+                <div class="scoreboard-header">
+                    <h2 class="scoreboard-title">guest</h2>
+                    <p class="scoreboard-current-score">0</p>
+                </div>
+
+                <div class="scoreboard-display">
+                    <p id="guest-points" class="scoreboard-points">0</p>
+                </div>
+                <div class="scoreboard-points-box">
+                    <button data-point="1" class="scoreboard-points-btn">
+                        +1
+                    </button>
+                    <button data-point="2" class="scoreboard-points-btn">
+                        +2
+                    </button>
+                    <button data-point="3" class="scoreboard-points-btn">
+                        +3
+                    </button>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <p>
+                coded by olopcodes &copy;
+                <span class="scoreboard-year">2000</span>
+            </p>
+        </footer>
+        <script src="index.js"></script>
+    </body>
+</html>

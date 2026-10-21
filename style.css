@@ -1,0 +1,172 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    line-height: 1.5;
+    display: grid;
+    grid-template-rows: 20rem 1fr auto;
+    min-height: 100vh;
+    text-align: center;
+    background-color: #1b244a;
+}
+
+h1,
+h2,
+h3 {
+    line-height: 1.1;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+footer {
+    text-align: center;
+    padding: 1rem;
+    letter-spacing: 0.5px;
+    color: #9aabd8;
+    font-size: 1.2rem;
+    background-color: #080001;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.scoreboard-main-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.scoreboard-heading {
+    font-size: 3.5rem;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+    color: white;
+}
+
+.scoreboard-quarters {
+    font-size: 2.5rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+    margin-bottom: 1.25rem;
+
+    span {
+        color: #f94f6d;
+    }
+}
+
+.scoreboard-time {
+    font-weight: 800;
+    font-size: 2.5rem;
+    font-family: "Consolas", "Courier New", monospace;
+    color: #9aabd8;
+    display: inline-block;
+    padding: 0.3rem 0.75rem;
+}
+
+.scoreboard-main-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4rem;
+    width: 94%;
+    max-width: 120rem;
+    margin: auto;
+}
+
+.scoreboard-wrapper {
+    border: 1px solid transparent;
+    border-radius: 0.6rem;
+    padding: 5rem 3rem;
+    width: 35rem;
+    display: grid;
+    gap: 3rem;
+    color: white;
+}
+
+.scoreboard-header {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    justify-content: center;
+}
+
+.scoreboard-title {
+    font-size: 4.25rem;
+    text-transform: uppercase;
+}
+
+.scoreboard-current-score {
+    font-weight: 800;
+    font-size: 3rem;
+    font-family: "Consolas", "Courier New", monospace;
+    background-color: white;
+    padding: 0.5rem;
+    width: 4.5rem;
+    line-height: 1;
+    height: 4.5rem;
+    color: #1b244a;
+    border-radius: 0.5rem;
+    display: grid;
+    place-items: center;
+}
+
+.scoreboard-display {
+    font-size: 8rem;
+    font-weight: bold;
+    border-radius: 0.5rem;
+    height: 18rem;
+    width: 16rem;
+    margin: auto;
+    display: grid;
+    place-items: center;
+    font-family: "Consolas", "Courier New", monospace;
+    color: #f94f6d;
+    background-color: #080001;
+}
+
+.scoreboard-points-box {
+    display: flex;
+    justify-self: center;
+    gap: 0.75rem;
+}
+
+.scoreboard-points-btn,
+.scoreboard-start-btn {
+    all: unset;
+    padding: 1rem 1.15rem;
+    font-size: 1.75rem;
+    font-weight: 800;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-family: "Consolas", "Courier New", monospace;
+    color: #9aabd8;
+    border: 2px solid #9aabd8;
+    background-color: transparent;
+    border-radius: 0.5rem;
+
+    &:hover {
+        color: white;
+        border-color: white;
+    }
+}
+
+.scoreboard-points-btn:disabled,
+#start-btn:disabled {
+    color: #9aabd8;
+    border: 2px solid #9aabd8;
+    pointer-events: none;
+}
+
+.red {
+    color: #f94f6d;
+    background-color: #080001;
+}
+
+.winner {
+    border: 4px solid rgb(17, 170, 17);
+}
